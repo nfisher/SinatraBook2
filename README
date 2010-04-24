@@ -1,0 +1,10 @@
+== SinatraBook2
+
+Getting started
+
+Create the file with facebook_config.rb containing:
+
+APP_KEY='api_key'
+APP_SECRET='api_secret'
+APP_ID='app_id'
+

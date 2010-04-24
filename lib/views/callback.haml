@@ -1,0 +1,22 @@
+!!! Strict
+%html
+	%body
+		%h1 Hello Kitty
+		%p
+			%fb:profile-pic{ :uid => "loggedinuser" }
+
+		%pre= @query.inspect
+	
+	#fb-root
+	%script{ :src => 'http://connect.facebook.net/en_US/all.js', :type => 'text/javascript' }
+	:javascript
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId : #{APP_ID},
+				status: true,
+				cookie: true,
+				xfbml: true
+				});
+			};
+						
+
